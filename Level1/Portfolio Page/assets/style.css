@@ -108,7 +108,7 @@ nav ul li{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    flex-basis: 1;
+    flex-basis: 50%;
 }
 .about-left .left-head{
     display: flex;
@@ -169,7 +169,7 @@ nav ul li{
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
-    flex-basis: 1;
+    flex-basis: 50%;
 }
 .about-right .about-right-img{
     display: flex;
@@ -202,16 +202,394 @@ nav ul li{
     color: #818080;
 }
 
+/* Skills */
+#skills{
+    padding: 10rem 0 8rem 0;
+}
+#skills .skill-container{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+}
+.skill-container .left-container{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skill-container .left-container h2{
+    font-size: 3rem;
+}
+.skill-container .left-container p{
+    font-size: 1.1rem;
+    color: #818080;
+}
+.skill-container .left-container h3{
+    font-size: 2rem;
+}
+.skill-container .left-container .skill-bar{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+.left-container .skill-bar .progressbar-left{
+    flex-basis: 50%;
+}
+.progressbar .progress-levle{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-bar .progressbar{
+    font-size: 1.5rem;
+}
+progress {
+    width: 200px;
+    height : 8px;
+    border: 2px solid rgb(98, 69, 197);
+    border-radius: 9px;
+ }
+progress::-webkit-progress-bar{
+    background-color: #ccc;
+}
+progress::-webkit-progress-value{
+    background-color: rgb(98, 69, 197);
+}
+.skill-container .right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skill-container .right-container ul{
+    display: flex;
+    border: 2px solid rgb(98, 69, 197);
+    border-radius: 10px;
+    /* padding: 2px; */
 
+}
+.skill-container .right-container ul button{
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* .skill-container .right-container ul button:hover ul{
+    padding: 0;
+} */
+.skill-container .right-container ul button:hover{
+    background: rgb(71, 42, 167);
+    border-radius: 10px;
+    color: #fff;
+}
+.right-container .tab-container .tab-1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.tab-1 .left-tab ,.tab-1 .right-tab{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.tab-1 .exp-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tab-1 .exp-container h5{
+    font-size: 1.2rem;
+}
+.tab-1 .exp-container hr{
+    width: 30%;
+}
+.tab-1 .exp-container p{
+    font-size: 20px;
+    color: rgb(98, 69, 197);
+}
+.tab-1 .exp-container h6{
+    font-size: 14px;
+}
+/* My Service */
+#my-service{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background: #f0f0f0;
+}
+#my-service .service-container{
+    max-width: 1280px;
+    margin: auto;
+}
+.service-container .service-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-header h2{
+    font-size: 3rem;
+}
+.service-header button{
+    height: max-content;
+    font-size: 20px;
+    background: rgb(98, 69, 197);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.service-header button:hover{
+    background: rgb(71, 42, 167);
+}
+.service-container .service-card-container{
+    margin: 80px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.service-card-container .card-wrapper{
+    display: flex;
+    gap: 30px;
+}
+.card-wrapper .service-card{
+    background: #faf9f9;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+}
+.service-card .card-icon{
+    background-image: url("./img/bg-icon.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 15px;
+    height: 100px;
+    width: 150px;
+}
+.service-card .card-icon i{
+    margin-top: 40%;
+}
+.service-card .card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.service-card .card-container h3{
+    font-size: 25px;
+}
+.service-card .card-container h5{
+    font-size: 17px;
+}
+.service-card .card-container h5 span{
+    color: rgb(98, 69, 197);
+}
+.service-card .card-container p{
+    font-size: 18px;
+    color: #818080;
+}
+#project{
+    margin: 5rem 0 5rem 0;
+}
+#project .project-wrapper{
+    max-width: 1280px;
+    margin: auto;
+}
 
-
-
-
-
-
-
-
-
+.project-wrapper .project-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.project-head h2{
+    font-size: 2.5rem;
+}
+.project-head ul{
+    display: flex;
+    gap: 35px;
+    font-size: 20px;
+    align-items: baseline;
+}
+.project-head ul li:hover{
+    color: rgb(98, 69, 197);
+    cursor: pointer;
+    border-bottom: 2px solid rgb(98, 69, 197);
+}
+.project-wrapper .project-card-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-card-container .project-card{
+    width: max-content;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.project-card-container .project-card img{
+    width: 400px;
+    border-radius: 20px;
+}
+.project-card .project-card-overly{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(98, 69, 197 , 0.7);
+    display: flex;
+    gap: 20px;
+    padding-left: 40px;
+    transition: all 400ms ease-in-out;
+}
+.project-card-overly i{
+    width: max-content;
+    height: max-content;
+    margin-top: 90%;
+    padding: 15px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    color: orange;
+    cursor: pointer;
+}
+.project-card-container .project-card:hover .project-card-overly{
+    top: 0;
+}
+/* Contact */
+#contact{
+    margin: 7rem 0 5rem 0;
+}
+#contact .contact-wrapper{
+    max-width: 1280px;
+    margin: auto;
+}
+.contact-wrapper .contact-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    align-items: baseline;
+    gap: 30px;
+}
+.contact-header h2{
+    font-size: 2.5rem;
+}
+.contact-header button{
+    height: max-content;
+    background: rgb(98, 69, 197);
+    color: #fff;
+    padding: 20px 45px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.contact-header button:hover{
+    background: rgb(71, 42, 167);
+}
+.contact-wrapper .contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-container .left-contact{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.left-contact .contact-address p{
+    font-size: 20px;
+    color: #818080;
+    margin-bottom: 10px;
+}
+.contact-address h4{
+    font-size: 1.5rem;
+}
+.follow-me p{
+    font-size: 20px;
+    color: #818080;
+    margin-bottom: 10px;
+}
+.follow-icon{
+    display: flex;
+    gap: 20px;
+}
+.follow-icon i{
+    padding: 10px 15px;
+    background: rgb(98, 69, 197);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.follow-icon i:hover{
+    background: rgb(71, 42, 167);
+}
+.contact-container .right-contact{
+    flex-basis: 50%;
+}
+.right-contact h5{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #818080;
+}
+.right-contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right-contact form input, textarea{
+    padding: 13px ;
+    border-radius: 10px;
+    border: 1px solid #818080;
+    font-size: 16px;
+}
+.right-contact form .form-input{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.right-contact form .form-input input{
+    flex-basis: 50%;
+}
+.right-contact form button{
+    width: max-content;
+    background: rgb(98, 69, 197);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.right-contact form button:hover{
+    background: rgb(71, 42, 167);
+}
+.map-container{
+    margin-top: 3px;
+    max-width: 1280px;
+    margin: auto;
+}
+#footer{
+    background: #000;
+    color: #fff;
+}
+#footer .footer-container{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    font-size: 18px;
+}
+.footer-container .left-footer{
+    display: flex;
+    gap: 10px;
+}
+.footer-container span{
+    color: orange;
+}
 
 
 
@@ -230,7 +608,7 @@ nav ul li{
         flex-direction: column;
     }
     .hero-container .hero-right img{
-        width: 32rem;
+        width: 30rem;
     }
     #about .about-container{
         flex-direction: column;
@@ -239,5 +617,67 @@ nav ul li{
     }
     .about-right .about-right-img{
         flex-direction: column;
+    }
+    #skills .skill-container{
+        flex-direction: column;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .skill-container .left-container .skill-bar{
+        flex-direction: column;
+    }
+    progress{
+        width: 100%;
+    }
+    .skill-container .right-container ul{
+        width: max-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .skill-container .right-container ul button{
+        padding: 1rem 3.7rem;
+        font-size: 1.2rem;
+    }
+    #my-service{
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+    .service-container .service-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .service-card-container .card-wrapper{
+        flex-direction: column;
+    }
+    #project{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .project-head{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .project-wrapper .project-card-container{
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-wrapper .contact-header{
+        flex-direction: column;
+    }
+    .contact-wrapper .contact-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    #contact{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    #footer .footer-container{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        flex-direction: column;
+        align-items: center;
     }
 }
