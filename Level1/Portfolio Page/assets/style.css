@@ -8,6 +8,7 @@
     font-family: "Roboto", sans-serif;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 /* Navbar */
 nav{
@@ -17,9 +18,15 @@ nav{
     box-shadow: 0px 0px 30px 1px;
     margin-top: -100px;
     position: absolute;
-    top: 0;
-    /* z-index: 1; */
+    
 }
+.sticky {
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+   z-index: 4;
+ }
+
 nav ul{
     display: flex;
     justify-content: center;
@@ -32,6 +39,14 @@ nav ul li{
     font-size: 1.3rem;
     font-weight: 600;
 }
+nav ul li a{
+    cursor: pointer;
+    color: #000;
+}
+.active{
+    color: rgb(98, 69, 197);
+}
+
 /* Hero Section */
 #hero{
     width: 100vw;
@@ -457,6 +472,10 @@ progress::-webkit-progress-value{
 .project-card-container .project-card:hover .project-card-overly{
     top: 0;
 }
+.active-filter{
+    color: rgb(98, 69, 197);
+    border-bottom: 2px solid rgb(98, 69, 197);
+}
 /* Contact */
 #contact{
     margin: 7rem 0 5rem 0;
@@ -604,6 +623,10 @@ progress::-webkit-progress-value{
 
 
 @media screen and (max-width: 906px) {
+    nav{
+        margin-top: -100px;
+        display: none;
+    }
     #hero .hero-container{
         flex-direction: column;
     }

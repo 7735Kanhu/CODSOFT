@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li  class="active"><a href="./index.html">Home</a> </li>
+            <li><a href="#about">About</a> </li>
+            <li><a href="#skills">Skills</a> </li>
+            <li><a href="#my-service">Services</a> </li>
+            <li><a href="#project">Projects</a> </li>
+            <li><a href="#contact">Contact</a> </li>
         </ul>
     </nav>
     <!-- Hero Section -->
@@ -240,43 +240,43 @@
             <div class="project-head">
                 <h2>My Projects</h2>
                 <ul>
-                    <li>All Projects</li>
-                    <li>UI/UX Design</li>
-                    <li>Graphic Design</li>
+                    <li class="filter-item active-filter" data-filter="all">All Projects</li>
+                    <li class="filter-item" data-filter="UI/UX_Design">UI/UX Design</li>
+                    <li class="filter-item" data-filter="Graphic_Design">Graphic Design</li>
                 </ul>
             </div>
             <div class="project-card-container">
-                <div class="project-card">
+                <div class="project-card UI/UX_Design">
                     <img src="./assets/img/project-1.jpg" alt="Project">
                     <div class="project-card-overly">
                         <i class="fa-solid fa-eye"></i><i class="fa-solid fa-link"></i>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card Graphic_Design">
                     <img src="./assets/img/project-2.jpg" alt="Project">
                     <div class="project-card-overly">
                         <i class="fa-solid fa-eye"></i><i class="fa-solid fa-link"></i>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card UI/UX_Design">
                     <img src="./assets/img/project-3.jpg" alt="Project">
                     <div class="project-card-overly">
                         <i class="fa-solid fa-eye"></i><i class="fa-solid fa-link"></i>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card Graphic_Design">
                     <img src="./assets/img/project-4.jpg" alt="Project">
                     <div class="project-card-overly">
                         <i class="fa-solid fa-eye"></i><i class="fa-solid fa-link"></i>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card UI/UX_Design">
                     <img src="./assets/img/project-5.jpg" alt="Project">
                     <div class="project-card-overly">
                         <i class="fa-solid fa-eye"></i><i class="fa-solid fa-link"></i>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card Graphic_Design">
                     <img src="./assets/img/project-6.jpg" alt="Project">
                     <div class="project-card-overly">
                         <i class="fa-solid fa-eye"></i><i class="fa-solid fa-link"></i>
@@ -355,5 +355,6 @@
         </div>
     </section>
     <!-- footer -->
+    <script src="/assets/scripts.js"></script>
 </body>
 </html>
