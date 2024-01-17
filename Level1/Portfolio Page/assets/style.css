@@ -105,6 +105,9 @@ nav ul li a{
     cursor: pointer;
     z-index: 2;
 }
+.hero-left .content button a{
+    color: #fff;
+}
 .hero-left .content button:hover{
     background: rgb(71, 42, 167)
 }
